@@ -355,4 +355,84 @@ h2.title-projects{
 .reviews{
 	background-color: $black;
 	padding: 100px 0;
+	color: $white;
+}
+.slider{
+	width: 100%;
+	margin-bottom: 100px;
+}
+.slider-item{
+	text-align: center;
+	padding-top: 60px;
+}
+.review-name{
+	font-size: 24px;
+	font-weight: 600;
+	padding-bottom: 40px;
+	color: $siren;
+}
+.review-text{
+	width: 600px;
+	margin: 0 auto;
+	font-weight: 400;
+}
+.slider-arrow-left{
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/arrow-left.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 120px;
+	left: 100px;
+	cursor: pointer;
+}
+.slider-arrow-right{
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/arrow-right.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 120px;
+	right: 100px;
+	cursor: pointer;
+}
+h2.sert{
+	color: #fff;
+	padding: 60px 0;
+}
+.sertificat{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 100px;
+	.sertificat-image{
+		width: 28%;
+	}
+}
+//---------------------FOOTER---------------------
+.footer{
+	padding: 60px 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.footer-btn{
+	a{
+			color: $text;
+			padding: 15px 45px;
+			background-color: $siren;
+			border-radius: 10px;
+			font-size: 24px;
+			transition: all 0.3s;
+			&:hover{
+				background-color: #fff;
+			}
+		}
+}
+.footer-socials{
+	img{
+		margin-left: 30px;
+	}
 }
