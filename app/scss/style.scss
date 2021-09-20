@@ -2,6 +2,7 @@ $black: #0A0A0F;
 $text: #232323;
 $siren: #C0BFF6;
 $blue: #246BF5;
+$white: #FBF7F7;
 
 html{
 	box-sizing: border-box;
@@ -152,7 +153,7 @@ hr{
 	padding: 100px 0;
 	color: #fff;
 }
-h2{
+h2.title-team{
 	font-size: 48px;
 	font-weight: 600;
 	text-align: center;
@@ -162,6 +163,10 @@ h2{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+h3{
+		font-size: 24px;
+		font-weight: 600;
+	}
 .team-about{
 	text-align: center;
 	margin: 0 auto;
@@ -178,10 +183,7 @@ h2{
 	width: 280px;
 	text-align: center;
 	margin: 0 40px 50px 40px;
-	h3{
-		font-size: 24px;
-		font-weight: 600;
-	}
+	
 	.job{
 		font-style: italic;
 		color: $siren;
@@ -219,4 +221,138 @@ h2{
 			display: block;
 		}
 	}
+}
+
+//----------------------------STEPS------------------------
+.steps-container{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 100px 0;
+	h2.title-steps{
+		background-image: none;
+		font-size: 48px;
+		font-weight: 600;
+		font-style: normal;
+		color: $text;
+		text-align: center;
+	}
+}
+.steps__wrapper{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.step{
+	margin-top: 70px;
+	width: 30%;
+	margin-left: 100px;
+	
+	.steps-list li{
+		list-style-type: disc;
+	}
+	.number{
+		font-size: 64px;
+		font-weight: 700;
+		color: $blue;
+		margin-bottom: 25px;
+	}
+}
+//----------------------------------HOWTOWORK---------------------
+.howtowork_wrapper{
+	padding: 100px 0;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	h3.howtowork{
+		font-size: 36px;
+		line-height: 130%;
+	}
+	p +p{
+		margin-bottom: 50px;
+	}
+	p{
+		color: $white;
+	}
+}
+.howtowork-info, .howtowork-items{
+	width: 45%;
+}
+.howtowork-items{
+	padding-top: 50px;
+}
+.item-how{
+	width: 100%;
+	height: 80px;
+	padding: 25px 25px 25px 50px;
+	position: relative;
+	margin-bottom: 15px;
+	width: 100%;
+	border: 1px solid #246BF5;
+	border-radius: 10px;
+	background-image: linear-gradient(to right,  #246BF5, #EACEFB);
+  /*-moz-border-image: -moz-linear-gradient(#246BF5 , #EACEFB);
+-webkit-border-image: -webkit-linear-gradient(#246BF5 , #EACEFB);*/
+  border-image-slice: 1; 
+  &::before{
+  	position: absolute;
+  	content: "";
+  	width: 20px;
+  	height: 16px;
+  	top: 30px;
+  	left: 20px;
+  	background-image: url('../images/check.svg');
+	background-repeat: no-repeat;
+  }
+}
+//--------------------------PROJECTS------------------------
+.projects{
+	background-color: #F4F3FF;
+	padding: 100px 0;
+}
+h2.title-projects{
+		background-image: none;
+		font-size: 48px;
+		font-weight: 600;
+		font-style: normal;
+		color: $text;
+		text-align: center;
+	}
+.progects__wrapper{
+	padding-top: 70px;
+}
+.btn-project{
+	padding: 15px 45px;
+	border-radius: 10px;
+	transition: all 0.3s;
+	color: $text;
+		border: 1px solid $text;
+		&:hover{
+			color: $siren;
+			border: 1px solid $siren;
+		}
+}
+.project-left{
+	display: flex;
+	justify-content: start;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.project-right{
+	display: flex;
+	justify-content: end;
+	width: 100%;
+	margin-bottom: 50px;
+}
+.project-info{
+	margin: 30px;
+	&.seo{
+		margin: 60px 0;
+	}
+}
+//----------------------reviews-------------------------
+.reviews{
+	background-color: $black;
+	padding: 100px 0;
 }
