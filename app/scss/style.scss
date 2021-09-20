@@ -40,7 +40,7 @@ html{
 	position: relative;
 }
 .container{
-	max-width: 1396px;
+	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -145,4 +145,78 @@ hr{
   -moz-border-image: -moz-linear-gradient(#246BF5 , #EACEFB);
 -webkit-border-image: -webkit-linear-gradient(#246BF5 , #EACEFB);
   border-image-slice: 1;
+}
+
+//---------------------TEAM----------------------------
+.team{
+	padding: 100px 0;
+	color: #fff;
+}
+h2{
+	font-size: 48px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 130%;
+	color: #fff;
+	background-image: linear-gradient(90deg, #246BF5, #EACEFB);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.team-about{
+	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+	padding-top: 30px;
+}
+.team__items{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 70px;
+}
+.item{
+	width: 280px;
+	text-align: center;
+	margin: 0 40px 50px 40px;
+	h3{
+		font-size: 24px;
+		font-weight: 600;
+	}
+	.job{
+		font-style: italic;
+		color: $siren;
+		padding-bottom: 10px;
+	}
+	.team-link{
+		color: #fff;
+		position: relative;
+		transition: all 0.3s;
+		&:hover{
+			color: $siren;
+			cursor: pointer;
+		}
+		&::before{
+			position: absolute;
+			content: "";
+			width: 15px;
+			height: 15px;
+			top: 6px;
+			left: -18px;
+			background-image: url('../images/arrow.svg');
+			background-repeat: no-repeat;
+
+		}
+		&.active{
+			&::before{
+				background-image: url('../images/arrow-down.svg');
+			}
+			
+		}
+	}
+	.hidden-block{
+		display: none;
+		&.open{
+			display: block;
+		}
+	}
 }
