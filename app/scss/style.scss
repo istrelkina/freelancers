@@ -36,6 +36,9 @@ html, body{
 body{
 	overflow-x: hidden;
 	background-color: $black;
+	&.lock{
+		overflow: hidden;
+	}
 }
 html{
 	position: relative;
@@ -73,22 +76,29 @@ html{
 			}
 		}
 	}
-	.menu-btn{
+	
+}
+.menu-btn button, .addteam{
 		
 		
-		a{
+		
 			color: #fff;
 			padding: 15px 45px;
 			background-color: $blue;
 			border-radius: 10px;
+			border: none;
 			font-size: 24px;
 			transition: all 0.3s;
+			cursor: pointer;
 			&:hover{
 				background-color: $siren;
 				color: $text;
 			}
-		}
+		
 	}
+.addteam{
+	font-size: 18px;
+	margin-left: 20px;
 }
 .menu-burger{
 	
@@ -150,6 +160,7 @@ html{
 	.btn-black{
 		color: #fff;
 		border: 1px solid #fff;
+		background-color: $black;
 		&:hover{
 			color: $siren;
 			border: 1px solid $siren;
@@ -448,19 +459,30 @@ h2.sert{
 	width: 100%;
 }
 .footer-btn{
-	a{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	button{
 			color: #fff;
 			padding: 15px 45px;
 			background-color: $blue;
 			border-radius: 10px;
-			font-size: 24px;
+			font-size: 18px;
 			transition: all 0.3s;
+			border: none;
+			cursor: pointer;
 			&:hover{
 				background-color: $siren;
 				color: $text;
 			}
+
 		}
+
+		button{
+				margin-right: 20px;
+			}
 }
+
 .footer-info{
 	padding-top: 50px;
 }
@@ -478,6 +500,90 @@ h2.sert{
 }
 
 
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.8s ease 0s;
+	&.open{
+		opacity: 1;
+		visibility: visible;
+		.popup__content{
+			transform: translate(0px,0px);
+			opacity: 1;
+		}
+	}
+	&__body {
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 10px;
+	}
+	&__content {
+		background: #f2f2f2;
+		color: $black;
+		max-width: 700px;
+		padding: 40px;
+		position: relative;
+		transition: all 0.8s ease 0s;
+		opacity: 0;
+		transform: translate(0px,-100%);
+	}
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 20px;
+	}
+	&__title {
+		font-size: 30px;
+		margin: 0 0 1em 0;
+		color: $black;
+	}
+	&__text {
+		form{
+			display: flex;
+			flex-direction: column;
+		}
+		input, textarea{
+			margin-bottom: 15px;
+			padding: 20px;
+			border: none;
+		}
+		.order-btn{
+			color: #fff;
+			padding: 15px 45px;
+			background-color: $blue;
+			border-radius: 10px;
+			font-size: 18px;
+			transition: all 0.3s;
+			border: none;
+			cursor: pointer;
+			&:hover{
+				background-color: $siren;
+				color: $text;
+			}
+		
+		}
+		
+	}
+	
+
+}
+.fields, .order-success, .note{
+		color: #000;
+	}
+	.notification_error{
+		color: red;
+	}
 
 
 

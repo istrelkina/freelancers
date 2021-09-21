@@ -3,12 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Каталог фрилансеров</title>
+	<title>Суперфрилансеры</title>
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+<script>
+window.ChatraSetup = {
+    colors: {
+        buttonText: '#f0f0f0', /* цвет текста кнопки чата */
+        buttonBg: '#246BF5'    /* цвет фона кнопки чата */
+    }
+};
+</script>
 <!-- Chatra {literal} -->
 <script>
     (function(d, w, c) {
@@ -39,7 +47,8 @@
 					<li><a class="nav__menu-link" href="#reviews">Отзывы</a></li>
 				</ul>
 				<div class="menu-btn">
-					<a href="#">Обсудить проект</a>
+					<!-- <a href="#">Обсудить проект</a> -->
+					<button onclick="Chatra('openChat', true)">Обсудить проект</button>
 				</div>
 			</div>
 			<div class="header__info">
@@ -51,8 +60,8 @@
 						Создаем современные сайты и настраиваем эффективную рекламу
 					</p>
 					<div class="info-buttons">
-					  <a href="#" class="btn-white">Наше портфолио</a>
-				     <a href="#" class="btn-black">Заказать</a>
+					  <a href="#projects" class="btn-white">Наше портфолио</a>
+				     <button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
 				   </div>
 				</div>
 				<div class="info-image">
@@ -86,7 +95,7 @@
 							Я middle Back-end разработчик, пишу код на php умею работать с sql, phpmyadmin. За спиной у меня 5 лет опыта, и много довольных клиентов.
 						</p>
 						<div class="team-btn">
-							<a href="#" class="btn-black">Заказать</a>
+							<button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
 						</div>
 					</div>
 					
@@ -103,7 +112,7 @@
 							Я middle Full-stack разработчик, програмирую уже 6 лет за это время успел поучаствовать в создании многих большых проектов, и сделал более 200 заказов на фрилансе.
 						</p>
 						<div class="team-btn">
-							<a href="#" class="btn-black">Заказать</a>
+							<button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -119,7 +128,7 @@
 							Я UI/UX веб-дизайнер со стажем 8 лет работы. Постоянно совершенствуюсь и развиваюсь. Вхожу в ТОП-10 фрилансеров.
 						</p>
 						<div class="team-btn">
-							<a href="#" class="btn-black">Заказать</a>
+							<button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
 						</div>
 						
 					</div>
@@ -136,7 +145,7 @@
 							Я копирайтер, рерайтер, пишу тексты на разные темы, в разных форматах. Большой опыт работы написания статей о бизнесе, работе, заработке, удаленке и т.д.
 						</p>
 						<div class="team-btn">
-							<a href="#" class="btn-black">Заказать</a>
+							<button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
 						</div>
 						
 					</div>
@@ -145,15 +154,15 @@
 					<img src="images/face5.png" alt="">
 					<h3>Анна Свиридова</h3>
 					<div class="job">
-						Руководитель проекта
+						Веб-дизайнер
 					</div>
 					<span class="team-link" href="#">Подробнее</span>
 					<div class="hidden-block">
 						<p>
-							В моей команде четко отлажена работа фрилансеров. Организовываю встречи с клиентами, консультирую, составляю технические задания.
+							Я UI/UX веб-дизайнер со стажем 8 лет работы. Постоянно совершенствуюсь и развиваюсь. Вхожу в ТОП-10 фрилансеров.
 						</p>
 						<div class="team-btn">
-							<a href="#" class="btn-black">Заказать</a>
+							<button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
 						</div>
 						
 					</div>
@@ -170,7 +179,7 @@
 							Занимаюсь тестированиям сайтов, мобильных програм уже как 3 года. За это время мною было протестировано больше 10 сейчас извесных сатов и приложений.
 						</p>
 						<div class="team-btn">
-							<a href="#" class="btn-black">Заказать</a>
+							<button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
 						</div>
 						
 					</div>
@@ -243,7 +252,8 @@
 					<p>
 						Наши специалисты всегда предлагают свой вариант дизайна, свой контент и структуру сайта.
 					</p>
-					<a href="#" class="btn-white">Заказать</a>
+					<button onclick="Chatra('openChat', true)" class="btn-black">Заказать</button>
+					<a class="addteam popup-link" href="#popup">Хочу в команду</a>
 				</div>
 				<div class="howtowork-items">
 					<div class="item-how">
@@ -412,19 +422,44 @@
 						Свяжитесь с нами и мы обсудим ваш проект.
 					</p>
 					<div class="footer-btn">
-						<a href="#">Обсудить проект</a>
+						
+						<button onclick="Chatra('openChat', true)">Обсудить проект</button>
+						<a class="addteam popup-link" href="#popup">Хочу в команду</a>
 					</div>
 				</div>
 				<div class="footer-socials">
-					<a href="#"><img src="images/email.png" alt=""></a>
-					<a href="#"><img src="images/telegram.png" alt=""></a>
-					<a href="#"><img src="images/whatsapp.png" alt=""></a>
+					<a href="mailto:combec.grupp@gmail.com"><img src="images/email.png" alt=""></a>
+					<a href="https://t.me/pashazeta11"><img src="images/telegram.png" alt=""></a>
+					
 				</div>
 			</div>
 		</div>
 	</section>
 
-	
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#" class="popup__close close-popup">X</a>
+				<div class="note"></div>
+				
+				<div class="popup__text fields">
+					<div class="popup__title">
+						Заполните форму заявки
+					</div>
+					<p>
+						Приглашаем вас присоединиться к амбициозной смелой команде фрилансеров. Дружелюбная атмосфера и интересные проекты обеспечены! Будем рады сотрудничеству.
+					</p>
+					<form class="ajax-contact-form" action="">
+						<input type="text" required placeholder="Имя*" name="name">
+						<input type="text" placeholder="Телефон" name="phone">
+						<input type="text" required placeholder="E-mail*" name="email">
+						<textarea name="message" cols="40" rows="4" placeholder="Расскажите в двух словах о себе.."></textarea>
+						<button class="order-btn" type="submit" name="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
