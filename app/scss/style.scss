@@ -69,6 +69,7 @@ html{
 			transition: all 0.3s;
 			&:hover{
 				color: $siren;
+
 			}
 		}
 	}
@@ -76,16 +77,35 @@ html{
 		
 		
 		a{
-			color: $text;
+			color: #fff;
 			padding: 15px 45px;
-			background-color: $siren;
+			background-color: $blue;
 			border-radius: 10px;
 			font-size: 24px;
 			transition: all 0.3s;
 			&:hover{
-				background-color: #fff;
+				background-color: $siren;
+				color: $text;
 			}
 		}
+	}
+}
+.menu-burger{
+	
+	display: none;
+	margin-right: 30px;
+	cursor: pointer;
+	
+	&.active::before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	&.active::after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	&.active span{
+		transform: scale(0);
 	}
 }
 .header__info{
@@ -115,6 +135,11 @@ html{
 }
 .info-buttons{
 	padding-top: 30px;
+}
+.info-image{
+	img{
+		width: 100%;
+	}
 }
 
 .btn-white, .btn-black{
@@ -386,6 +411,7 @@ h2.title-projects{
 	top: 120px;
 	left: 100px;
 	cursor: pointer;
+	z-index: 5;
 }
 .slider-arrow-right{
 	width: 50px;
@@ -408,31 +434,51 @@ h2.sert{
 	width: 100%;
 	margin-bottom: 100px;
 	.sertificat-image{
-		width: 28%;
+		width: 30%;
+		img{
+			width: 100%;
+		}
 	}
 }
 //---------------------FOOTER---------------------
 .footer{
-	padding: 60px 0;
+	padding: 0;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 .footer-btn{
 	a{
-			color: $text;
+			color: #fff;
 			padding: 15px 45px;
-			background-color: $siren;
+			background-color: $blue;
 			border-radius: 10px;
 			font-size: 24px;
 			transition: all 0.3s;
 			&:hover{
-				background-color: #fff;
+				background-color: $siren;
+				color: $text;
 			}
 		}
 }
+.footer-info{
+	padding-top: 50px;
+}
 .footer-socials{
+	padding-top: 50px;
 	img{
 		margin-left: 30px;
 	}
 }
+.footer-image{
+	width: 300px;
+	img{
+		width: 100%;
+	}
+}
+
+
+
+
+
+@import 'media';

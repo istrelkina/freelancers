@@ -1,0 +1,293 @@
+@media(max-width: 1366px){
+	.header-top{
+		padding-top: 40px;
+	}
+}
+
+@media(max-width: 1110px){
+	.header-top .menu .nav__menu-link{
+		font-size: 18px;
+	}
+	.header-top .menu-btn a{
+		font-size: 18px;
+	}
+	h2.title-team, .steps-container h2.title-steps, h2.title-projects{
+		font-size: 36px;
+	}
+	.header__info {
+		margin-top: 100px;
+	}
+	.item{
+		margin: 0 20px 50px 20px;
+	}
+	.team, .steps-container, .howtowork_wrapper, .projects, .reviews {
+	    padding: 70px 0;
+	    
+	}
+	.header__info{
+		padding-bottom: 30px;
+	}
+	.project-image{
+		width: 600px;
+		img{
+			width: 100%;
+		}
+	}
+	.item-how {
+      height: fit-content;
+   }
+}
+
+@media(max-width: 1000px){
+	.header__info {
+    	margin-top: 60px;
+	}
+	.header__info h1 {
+	    font-size: 48px;
+	    
+	    width: 430px;
+ 	}
+ 	.footer-socials a{
+ 		padding-bottom: 20px;
+ 	}
+}
+
+@media(max-width: 990px){
+	.slider-arrow-right{
+		right: 30px;
+	}
+	.slider-arrow-left{
+		left: 30px;
+	}
+}
+@media(max-width: 850px){
+	.howtowork-info, .howtowork-items{
+		width: 49%;
+	}
+	.team, .steps-container, .howtowork_wrapper, .projects, .reviews {
+	    padding: 60px 0;
+	    
+	}
+	.project-info {
+	    margin: 10px;
+	}
+}
+
+@media(max-width: 800px){
+	.header__info {
+	    flex-wrap: wrap;
+	    
+	}
+	.info-text{
+		order: 1;
+		h1{
+			margin-top: 0;
+		}
+	}
+	.info-image img {
+	    width: 400px;
+	}
+	.header__info {
+	    margin-top: 0;
+	}
+	.project-info p{
+		margin: 5px 0;
+	}
+	.project-right .project-info{
+		order: 1;
+	}
+	.project-info.seo {
+	    margin: 40px 10px;
+	}
+	.slider-arrow-right{
+		right: 0;
+	}
+	.slider-arrow-left{
+		left: 0;
+	}
+	.item {
+	    margin: 0 10px 50px 10px;
+	}
+	.review-text{
+		width: 500px;
+	}
+}
+@media(max-width: 700px){
+	.project-image {
+	    width: 420px;
+	}
+	html, body{
+		font-size: 16px;
+	}
+	.header__info p{
+		font-size: 18px;
+	}
+	.item-how{
+		padding: 20px 20px 20px 50px;
+	}
+	.howtowork_wrapper h3.howtowork {
+	    font-size: 24px;
+	    
+	}
+	.howtowork-items {
+	    padding-top: 30px;
+	}
+	h2.title-team, .steps-container h2.title-steps, h2.title-projects {
+	    font-size: 30px;
+	    line-height: 130%;
+	}
+	.slider {
+	    
+	    margin-bottom: 60px;
+	}
+	.slider-item {
+	    
+	    padding-top: 30px;
+	}
+	.slider-arrow-right, .slider-arrow-left {
+		top: 90px;
+	}
+	.team__items{
+		justify-content: center;
+	}
+}
+
+@media(max-width:630px){
+	.menu-burger{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		&::before,
+		&::after{
+			content: "";
+			position: absolute;
+			background-color: #fff;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all .3s;
+		}
+		&::before{
+			top: 0;
+		}
+		&::after{
+			bottom: 0;
+		}
+		span{
+			position: absolute;
+			background-color: #fff;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			transition: all .3s;
+		}
+	}
+	.header-top .menu{
+		position: absolute;
+		z-index: 10;
+		padding: 20px;
+		top: 110px;
+		left: 0;
+		width: 100%;
+		background-color: rgba(34,34,34,.9);
+		display: none;
+		li{
+			display: block;
+			width: 250px;
+			margin-bottom: 20px;
+			margin-left: 45px;
+			border-bottom: 1px solid #fff;
+			a{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	.step{
+		margin-left: 50px;
+	}
+	.review-text {
+	    width: 320px;
+	}
+	.footer-image{
+		display: none;
+	}
+
+}
+
+@media(max-width:540px){
+	.header__info p {
+		width: 310px;
+	}
+	.header-top {
+	    padding-top: 25px;
+	}
+	.project-left, .project-right{
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+	/* .project-right .project-info {
+      order: 0;
+	} */
+	.project-right {
+		justify-content: start;
+		
+	}
+	.progects__wrapper {
+	    padding-top: 40px;
+	}
+	.project-info.seo {
+	    margin: 20px 0px;
+	}
+	.sertificat{
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+		justify-content: center;
+	}
+	.sertificat .sertificat-image {
+	    width: 80%;
+	}
+	.footer-btn a{
+		padding: 15px;
+	}
+	.step{
+		width: 38%;
+	}
+}
+@media(max-width:450px){
+	.item-how::before {
+		width: 0;
+	}
+	.item-how{
+		padding: 20px;
+		background-image: none;
+	}
+	.howtowork_wrapper{
+		flex-wrap: wrap;
+	}
+	.howtowork-info, .howtowork-items {
+	    width: 90%;
+	}
+	.header__info h1 {
+	    font-size: 40px;
+	    width: 310px;
+	}
+	.header__info p{
+		width: 100%;
+	}
+	.header__info .btn-white {
+	    
+	    margin-bottom: 20px;
+	}
+	.container{
+		padding: 0 10px;
+	}
+	.step {
+	    width: 100%;
+	}
+	.review-text {
+	    width: 250px;
+	}
+}

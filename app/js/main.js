@@ -20,6 +20,11 @@ $(function(){
 	  prevArrow: '<div class="slick-prev slider-arrow-left"></div>',
 	  nextArrow: '<div class="slick-next slider-arrow-right"></div>'
 	});
+	$('.slider__nav').slick({
+	  slidesToShow: $(window).width() > 450 ? 4 : 3,
+	  arrows:false	  
+	  	  
+	});
 	
 	$('.nav__menu-link').on('click', function() {
 
@@ -34,4 +39,11 @@ $(function(){
 	     
 	    return false;
 	});
+
+	$('.menu-burger').on('click',function(){
+        $('.menu').slideToggle();
+    });
+    $('.menu-burger').on('click',function(){
+    	$('.menu-burger').toggleClass('active');
+    });
 });
